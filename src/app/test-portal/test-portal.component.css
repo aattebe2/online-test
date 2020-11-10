@@ -1,0 +1,7 @@
+.hiddenclass {
+    display: 'none';
+}
+
+.shownclass {
+    display: inline;
+}

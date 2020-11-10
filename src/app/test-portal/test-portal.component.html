@@ -1,0 +1,54 @@
+<div id="idTest" style="display: inline;">
+    <h2>Q{{this?.index + 1}}: {{this?.testPortalObject[this?.index]?.question}}</h2>
+    <br />
+    <table class="table table-bordered" style="border: 2px solid #e9ecef;">
+        <tr style="background-color: #fff8dc; color: #000000;">
+            <td id="tdAnswer0" style="cursor: pointer; border: 2px solid #e9ecef; width: 50%"
+              onmouseover="this.style.backgroundColor='#0000cd'; this.style.color='#ffffff'"
+              onmouseout="this.style.backgroundColor='#fff8dc'; this.style.color='#000000'"
+              (click)="submitAnswer(0)">
+                {{this.testPortalObject[this.index].answers[0]}}
+            </td>
+            <td id="tdAnswer2" style="cursor: pointer; border: 2px solid #e9ecef;  width: 50%"
+              onmouseover="this.style.backgroundColor='#0000cd'; this.style.color='#ffffff'"
+              onmouseout="this.style.backgroundColor='#fff8dc'; this.style.color='#000000'"
+              (click)="submitAnswer(2)">
+                {{this.testPortalObject[this.index].answers[2]}}
+            </td>
+        </tr>
+        <tr style="background-color: #fff8dc; color: #000000;">
+            <td id="tdAnswer1" style="cursor: pointer; border: 2px solid #e9ecef;  width: 50%"
+              onmouseover="this.style.backgroundColor='#0000cd'; this.style.color='#ffffff'"
+              onmouseout="this.style.backgroundColor='#fff8dc'; this.style.color='#000000'"
+              (click)="submitAnswer(1)">
+                {{this.testPortalObject[this.index].answers[1]}}
+            </td>
+            <td id="tdAnswer3" style="cursor: pointer; border: 2px solid #e9ecef;  width: 50%"
+              onmouseover="this.style.backgroundColor='#0000cd'; this.style.color='#ffffff'"
+              onmouseout="this.style.backgroundColor='#fff8dc'; this.style.color='#000000'"
+              (click)="submitAnswer(3)">
+                {{this.testPortalObject[this.index].answers[3]}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="idResults" style="display: none;">
+    <h2><span style="color: #ff6347;">{{this.endMessage}}</span></h2>
+    <br />
+        <table class="table" *ngFor="let qes of testPortalObject; let i=index">
+            <tr >
+                <th>Q{{i + 1}}: {{this.testPortalObject[i].question}}</th>
+            </tr>
+            <tr>
+                <td>Your Answer:</td>
+                <td>{{this.userAnswer[i]}}</td>
+            </tr>
+            <tr>
+                <td>Correct Answer:</td>
+                <td>{{this.correctAnswerForUser[i]}}</td>
+            </tr>
+        </table>
+    
+    <input type="button" value="Start Over" class="btn btn-warning" (click)="startOver()" />
+</div>

@@ -1,0 +1,102 @@
+[
+	{
+		 "question": "What direction is the sky?",
+		 "answers": [
+			 "Up",
+			 "Down",
+			 "Left",
+			 "Right"
+		 ],
+		 "correctAnswer": 0
+	},
+	{
+		"question": "If you have 2 apples, how many apples do you have?",
+		"answers": [
+			"0",
+			"5",
+			"2",
+			"1"
+		],
+		"correctAnswer": 2
+	},
+	{
+		"question": "What is the continent of Asia?",
+		"answers": [
+			"Africa",
+			"Asia",
+			"North America",
+			"Australia"
+		],
+		"correctAnswer": 1
+	},
+	{
+		"question": "How many words does this sentence have?",
+		"answers": [
+			"8",
+			"9",
+			"6",
+			"7"
+		],
+		"correctAnswer": 3
+	},
+	{
+		"question": "If Priya has a red car, what color is Priya's car?",
+		"answers": [
+			"Black",
+			"Silver",
+			"Blue",
+			"Red"
+		],
+		"correctAnswer": 3
+	},
+	{
+		"question": "Mark arrived at the store at 4:00 PM.  On his way to the store, he stopped at the pool for 30 minutes.  What time did he arrive at the store?",
+		"answers": [
+			"4:00 PM",
+			"4:00 AM",
+			"4:30 PM",
+			"Not enough information"
+		],
+		"correctAnswer": 0
+	},
+	{
+		"question": "Northeast is a combination of which two directions?",
+		"answers": [
+			"West and North",
+			"South and East",
+			"North and East",
+			"South and North"
+		],
+		"correctAnswer": 2
+	},
+	{
+		"question": "Power Factor Correction (pfc) is a significant consideration to many industrial applications—particularly those which implement a large number of induction motors.  What is the first word in the previous sentence?",
+		"answers": [
+			"What",
+			"Power",
+			"Green",
+			"167"
+		],
+		"correctAnswer": 1
+	},
+	{
+		"question": "On earth, which direction do dropped objects fall due to gravity?",
+		"answers": [
+			"Down",
+			"Up",
+			"Sideways",
+			"Objects always remain exactly where they're placed"
+		],
+		"correctAnswer": 0
+	},
+	{
+		"question": "Plain salt is _____ flavored?",
+		"answers": [
+			"Bitter",
+			"Oregano and Anise",
+			"Sweet",
+			"Salty"
+		],
+		"correctAnswer": 3
+	}
+]

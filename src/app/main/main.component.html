@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" (click)="homeActive()" routerLink=''>Home<span class="sr-only">(current)</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li id="navTests" class="nav-item">
+                <a class="nav-link" routerLink='tests' (click)="testsActive()">Tests</a>
+            </li>
+            <li id="navInstructions" class="nav-item">
+                <a class="nav-link" routerLink='instructions' (click)="instructionsActive()">Instructions</a>
+            </li>
+            <li id="navAbout" class="nav-item">
+                <a class="nav-link" routerLink='about' (click)="aboutActive()">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<br />
+<br />
+
+<main role="main" class="container">
+    <div class="jumbotron">
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</main>
